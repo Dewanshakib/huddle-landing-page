@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: url(./Design/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+.container{
+    height: 100vh;
+    background-image: url(./Design/logo.svg),url(./Design/illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-position: top 9% left 1%,top 55% left 3%;
+    background-size: 18%,52%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.content{
+    max-width: 900px;
+    width: 35%;
+    height: 70%;
+    margin-right: 7%;
+}
+.content-info > h1{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+.content-info > p{
+    color: hsl(0, 0%, 100%,60%);
+    margin-bottom: 30px;
+}
+.content > a{
+    padding: 14px 55px;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.content > a:hover{
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.socials{
+    margin-top: 60%;
+    text-align: right;
+    margin-right: 4%;
+}
+.socials a{
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.socials > a > i{
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+}
+.socials > a > i:hover{
+    color: hsl(300, 69%, 71%);
+}
+.socials > a > i::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    left: -7px;
+    bottom: -5px;
+    border: 1px solid #fff;
+}
+@media screen and (max-width: 375px) {
+    body{
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        background-image: url(./Design/bg-mobile.svg);
+        background-position: top 0% left 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .container{
+        height: 100vh;
+        background-image: url(./Design/logo.svg),url(./Design/illustration-mockups.svg);
+        background-repeat: no-repeat;
+        background-position: top 4% left 12%,top 17% left 49%;
+        background-size: 38%,80%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .content{
+        max-width: 900px;
+        width: 80%;
+        height: 55%;
+        margin-right: 7%;
+        margin: 0 auto;
+    }
+    .content-info{
+        text-align: center;
+    }
+    .content-info > h1{
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .content > a{
+        padding: 14px 55px;
+        text-decoration: none;
+        color: hsl(257, 40%, 49%);
+        background: #fff;
+        border-radius: 30px;
+        font-size: 16px;
+        margin-left: 21%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .socials{
+        margin-right: 10%;
+        text-align: center;
+        margin-top: 35%;
+    }
+    .socials > a > i{
+        position: relative;
+        font-size: 13px;
+        color: #fff;
+    }
+    .socials > a > i::after{
+        content: '';
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        left: -8px;
+        bottom: -6px;
+        border: 1px solid #fff;
+    }
+    .content > a:hover{
+        background: hsl(300, 69%, 71%);
+        color: #fff;
+    }
+}
